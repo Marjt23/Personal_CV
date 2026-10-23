@@ -18,7 +18,7 @@
 
 - [ ] Confirm the city/province to display; no location has been invented.
 - [ ] Add other projects, LinkedIn, achievements, or certificates only if applicable and verified.
-- [ ] Push the latest source to GitHub.
+- [x] Push the latest source to GitHub (course content update: 8c0a31c).
 - [ ] Connect the repository to the intended Vercel project and deploy.
 - [ ] Record the verified public Vercel URL in README.md.
 - [ ] Check the deployed site in desktop, tablet, and mobile browsers; inspect for overflow, overlap, loaded images, usable menu, and readable text.
