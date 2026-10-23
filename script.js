@@ -19,7 +19,7 @@ const toggle = document.querySelector('.menu-toggle');
 const navigation = document.querySelector('#navigation');
 if (!header || !toggle || !navigation) return;
 const links = [...navigation.querySelectorAll('a')];
-const mobile = window.matchMedia('(max-width: 1000px)');
+const mobile = window.matchMedia('(max-width: 1100px)');
 
 toggle.hidden = false;
 header.classList.add('enhanced');
@@ -67,7 +67,7 @@ function updateNavigation() {
 
   const label = document.querySelector('.menu-current');
   const activeLink = links.find(link => link.hash === `#${current.id}`);
-  if (label && activeLink) label.textContent = activeLink.textContent.slice(2);
+  if (label && activeLink) label.textContent = activeLink.textContent.trim();
   scheduled = false;
 }
 window.addEventListener('scroll', () => {
