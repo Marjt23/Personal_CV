@@ -189,3 +189,15 @@ footer { display:flex; gap:20px; justify-content:space-between; align-items:cent
 .section-alias a { text-decoration:underline; text-underline-offset:4px; }
 @media(max-width:767px) { .certificate-card { grid-template-columns:1fr; gap:24px; padding:20px; }.certificate-details h3 { font-size:21px; }.linkedin-link { margin-left:18px; } }
 @media(prefers-reduced-motion:reduce) { .certificate-preview:hover img { transform:none; } }
+
+/* First-year group film recognition, with complete photos available on click. */
+.film-achievement { margin-top:32px; padding:32px; border:1px solid var(--line); border-radius:20px; background:#fffaf3; }
+.film-heading { display:flex; justify-content:space-between; align-items:center; gap:20px; }
+.film-heading h3 { font:500 30px/1.2 'Playfair Display',Georgia,serif; margin:16px 0 10px; }
+.film-event { font-size:11px; color:var(--primary); }.film-emblem { font-size:65px; color:var(--gold); }
+.film-story { max-width:800px; color:var(--muted); font-size:13px; margin-top:22px; }
+.film-awards { list-style:none; display:flex; flex-wrap:wrap; gap:20px 40px; padding:0; margin:26px 0; }
+.film-awards li { display:flex; gap:12px; align-items:center; }.film-awards li>span { color:var(--primary); font-size:32px; }.film-awards strong { font-size:13px; display:block; }.film-awards div>span { font-size:10px; color:var(--muted); }
+.film-gallery { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:18px; }.film-gallery figure { margin:0; min-width:0; }.film-gallery a { display:block; border-radius:12px; overflow:hidden; background:var(--parchment); }.film-gallery img { width:100%; height:auto; aspect-ratio:4/3; object-fit:cover; display:block; transition:transform var(--transition); }.film-gallery figure:nth-child(2) img { object-position:center 55%; }.film-gallery a:hover img { transform:scale(1.03); }.film-gallery figcaption { font-size:10px; color:var(--muted); margin-top:10px; }.film-note { font-size:10px; color:var(--muted); margin-top:22px; max-width:850px; }
+@media(max-width:767px) { .film-achievement { padding:22px; }.film-gallery { grid-template-columns:1fr; gap:22px; }.film-gallery img { aspect-ratio:auto; }.film-heading h3 { font-size:26px; }.film-emblem { font-size:40px; } }
+@media(prefers-reduced-motion:reduce) { .film-gallery a:hover img { transform:none; } }

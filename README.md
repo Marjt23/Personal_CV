@@ -66,3 +66,7 @@ The capability illustrations are decorative skill representations, not screensho
 ## Submission
 
 See `SUBMISSION.md` for remaining checks. The repository already has multiple development commits; history should reflect real work rather than artificial commits added for grading.
+
+## First-year film achievement
+
+Blood Ties is a group film from a first-year subject, recognized for Best Production Design (Short Film) at Multimedia Arts Festival 2023. The accompanying Best Actor recognition is attributed to Mark Gerald Ramos. Three owner-supplied photos are displayed; awards for other entries visible in those photos are not claimed for Blood Ties or Marjorie.
