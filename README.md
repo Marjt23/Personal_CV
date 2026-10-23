@@ -1,6 +1,6 @@
 # Marjorie Casilao — Personal Portfolio
 
-An elegant editorial CV with navy accents, soft blue surfaces, crisp white backgrounds, and the original profile photograph.
+An elegant editorial CV with deep burgundy accents, warm cream surfaces, muted antique gold details, an arched portrait frame, and the original profile photograph.
 
 ## Features
 

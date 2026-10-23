@@ -1,16 +1,16 @@
-/* Navy field notes — a personal editorial portfolio */
+/* Warm editorial portfolio — parchment, oxblood, and antique gold */
 :root {
-  --primary:#315b82;
-  --primary-dark:#182f49;
-  --soft-blue:#e5eff8;
-  --surface:#f3f7fb;
-  --paper:#fcfdff;
-  --text:#203044;
-  --muted:#586a7c;
-  --line:#d7e2ed;
+  --primary:#754337;
+  --primary-dark:#351717;
+  --parchment:#ecdecc;
+  --surface:#f0e5d6;
+  --paper:#f9f0e3;
+  --text:#38251f;
+  --muted:#725b4e;
+  --line:#d8c3ab;
   --space:clamp(64px,8vw,112px);
   --radius:4px;
-  --shadow:0 16px 48px rgb(24 47 73 / 8%);
+  --shadow:0 16px 48px rgb(53 23 23 / 10%);
   --transition:220ms ease
 }
 
@@ -36,11 +36,11 @@ button {
   font:inherit
 }
 a:focus-visible,button:focus-visible {
-  outline:3px solid #315b82;
+  outline:3px solid #754337;
   outline-offset:5px
 }
 ::selection {
-  background:var(--soft-blue)
+  background:var(--parchment)
 }
 h1,h2,h3,p {
   margin:0
@@ -131,9 +131,9 @@ h3 {
   z-index:30;
   background:var(--primary-dark);
   color:white;
-  border:1px solid #40546a;
-  border-radius:12px;
-  box-shadow:0 12px 45px #182f4922;
+  border:1px solid #8c6252;
+  border-radius:3px;
+  box-shadow:0 12px 45px #35171722;
   --progress:0%
 }
 .nav-shell {
@@ -145,8 +145,8 @@ h3 {
 .dock-label {
   font-size:8px;
   letter-spacing:2px;
-  color:#c4d9eb;
-  border-right:1px solid #40546a;
+  color:#e4c9a6;
+  border-right:1px solid #8c6252;
   padding-right:18px
 }
 nav {
@@ -156,24 +156,24 @@ nav {
 nav a {
   font-size:11px;
   padding:10px 13px;
-  border-radius:7px;
+  border-radius:2px;
   transition:background var(--transition),color var(--transition)
 }
 nav a>span {
   display:none
 }
 nav a:hover {
-  background:#294762
+  background:#532727
 }
 nav a[aria-current] {
-  background:#e5eff8;
-  color:#182f49
+  background:#ecdecc;
+  color:#351717
 }
 .reading-progress {
   font-size:9px;
   min-width:30px;
   font-variant-numeric:tabular-nums;
-  color:#c4d9eb
+  color:#e4c9a6
 }
 .progress-track {
   height:2px;
@@ -184,14 +184,14 @@ nav a[aria-current] {
   display:block;
   height:100%;
   width:var(--progress);
-  background:#9dc5e6;
+  background:#caa67b;
   transition:width 100ms linear
 }
 .menu-toggle {
   display:none
 }
 .site-header a:focus-visible,.site-header button:focus-visible {
-  outline-color:#bbd9f2
+  outline-color:#e5c9a3
 }
 
 /* Asymmetrical cover with a rectangular photo and offset caption. */
@@ -202,10 +202,11 @@ nav a[aria-current] {
   align-items:center;
   position:relative;
   padding-block:72px 100px;
+  border-bottom:1px solid var(--line);
   min-height:700px
 }
 .hero::before {
-  content:'01 — A WORK IN PROGRESS';
+  content:'PERSONAL CV / CARE · CURIOSITY · PURPOSE';
   position:absolute;
   right:0;
   top:26px;
@@ -257,7 +258,8 @@ h1 em {
 }
 .primary {
   background:var(--primary-dark);
-  color:white
+  border-block:1px solid #8c6252;
+  color:#f9f0e3
 }
 .primary:hover {
   background:var(--primary)
@@ -289,13 +291,17 @@ h1 em {
   content:'';
   position:absolute;
   inset:0 30px 65px 0;
-  background:var(--soft-blue);
+  background:var(--parchment);
+  border:1px solid #caa67b;
+  border-radius:220px 220px 0 0;
   z-index:-1
 }
 .portrait-frame {
   background:var(--primary-dark);
   padding:0 0 16px;
-  transform:rotate(1deg);
+  border-radius:210px 210px 3px 3px;
+  border:1px solid #caa67b;
+  overflow:hidden;
   box-shadow:var(--shadow)
 }
 .portrait-frame img {
@@ -304,12 +310,13 @@ h1 em {
   display:block;
   object-fit:cover;
   object-position:center 25%;
-  filter:saturate(.95)
+  filter:saturate(.88);
+  border-radius:210px 210px 0 0
 }
 .portrait-caption {
   display:block;
-  color:#e5eff8;
-  font-size:7px;
+  color:#ecdecc;
+  font-size:8px;
   letter-spacing:1.3px;
   text-align:center;
   padding:16px 8px 0
@@ -355,14 +362,15 @@ h1 em {
 /* Field-note sections use rules, open space, and contrasting surfaces. */
 .about {
   background:var(--primary-dark);
-  color:#fcfdff;
+  color:#f9f0e3;
+  border-block:1px solid #8c6252;
   position:relative
 }
 .about .eyebrow,.about .section-alias,.about h2 em,.about .traits span {
-  color:#bbd9f2
+  color:#e5c9a3
 }
 .about-copy>p {
-  color:#d0deeb;
+  color:#eddbc6;
   margin-bottom:20px;
   font-size:14px
 }
@@ -386,7 +394,7 @@ h1 em {
   display:flex;
   flex-wrap:wrap;
   gap:22px;
-  border-top:1px solid #40546a;
+  border-top:1px solid #8c6252;
   padding-top:22px
 }
 .traits div {
@@ -466,7 +474,7 @@ h1 em {
 }
 .chips li {
   font-size:10px;
-  background:var(--soft-blue);
+  background:var(--parchment);
   color:var(--primary-dark);
   padding:4px 9px
 }
@@ -505,13 +513,13 @@ h1 em {
 }
 
 .experience {
-  background:var(--soft-blue)
+  background:var(--parchment)
 }
 .experience-card {
   display:grid;
   grid-template-columns:1fr 1.4fr;
   gap:65px;
-  border-top:1px solid #bfd1e0;
+  border-top:1px solid #cbb39b;
   padding-top:35px
 }
 .experience-meta {
@@ -546,7 +554,7 @@ h1 em {
 .experience-mark {
   font:400 60px 'Playfair Display',serif;
   margin-top:22px;
-  color:#708ba3
+  color:#8d6953
 }
 .responsibilities ul {
   margin:0;
@@ -557,7 +565,7 @@ h1 em {
   font-size:13px;
   color:var(--muted);
   padding:16px 0 16px 25px;
-  border-bottom:1px solid #bbd9f2;
+  border-bottom:1px solid #e5c9a3;
   position:relative
 }
 .responsibilities li::before {
@@ -598,7 +606,7 @@ h1 em {
 }
 .timeline .current::before {
   background:var(--primary);
-  box-shadow:0 0 0 5px var(--soft-blue)
+  box-shadow:0 0 0 5px var(--parchment)
 }
 .timeline-date {
   font-size:10px;
@@ -606,7 +614,7 @@ h1 em {
   margin-bottom:8px
 }
 .timeline-date span {
-  background:var(--soft-blue);
+  background:var(--parchment);
   padding:3px 8px;
   margin-left:10px;
   font-size:9px
@@ -625,28 +633,29 @@ h1 em {
 
 .contact {
   background:var(--primary-dark);
-  color:white
+  border-block:1px solid #8c6252;
+  color:#f9f0e3
 }
 .contact-inner {
   padding-block:75px
 }
 .contact .eyebrow {
-  color:#bbd9f2
+  color:#e5c9a3
 }
 .contact h2 {
   font-size:clamp(60px,9vw,110px)
 }
 .contact h2 em {
-  color:#bbd9f2
+  color:#e5c9a3
 }
 .contact h2>span {
   font-size:45px;
   margin-left:30px;
-  color:#bbd9f2
+  color:#e5c9a3
 }
 .contact-inner>p:not(.eyebrow) {
   font-size:14px;
-  color:#d0deeb;
+  color:#eddbc6;
   margin-top:22px
 }
 .contact-links {
@@ -658,13 +667,13 @@ h1 em {
 }
 .contact-links a {
   display:block;
-  border-top:1px solid #708ba3;
+  border-top:1px solid #8d6953;
   padding:18px 0;
   min-width:0
 }
 .contact-links span {
   font-size:10px;
-  color:#bbd9f2;
+  color:#e5c9a3;
   display:flex;
   justify-content:space-between;
   margin-bottom:10px
@@ -684,7 +693,7 @@ h1 em {
 }
 .github-link {
   font-size:11px;
-  color:#d0deeb;
+  color:#eddbc6;
   text-decoration:underline;
   text-underline-offset:5px
 }
@@ -791,7 +800,7 @@ h1 {
   top:10px;
   width:calc(100% - 32px);
   max-width:420px;
-  border-radius:12px
+  border-radius:3px
 }
 .nav-shell {
   padding:10px 16px;
