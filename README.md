@@ -1,13 +1,13 @@
 # Marjorie Casilao — Personal Portfolio
 
-An elegant editorial CV with deep burgundy accents, warm cream surfaces, muted antique gold details, a restrained portrait treatment, and the original profile photograph.
+An elegant editorial CV with deep burgundy accents, warm cream surfaces, muted antique gold details, a circular portrait with floating skill badges, and the original profile photograph.
 
 ## Features
 
-- Reference-inspired split hero, compact skill categories, side-by-side experience and education, portrait-led About, tools grid, and contact sections
+- Reference-inspired split hero, two-column capability showcases, side-by-side experience and education, portrait-led About, tools grid, and contact sections
 - Existing CV facts and cream/burgundy palette preserved; capability illustrations represent skill categories rather than invented projects
-- Compact sticky navigation with active section states and a direct Achievements link
-- Restrained hover feedback and subtle section reveals
+- Rounded sticky navigation with active section pills and a subtle scroll progress line
+- Floating portrait badge, entrance transitions, and a moving skills strip with pause/resume controls
 - Expandable mobile menu with Escape dismissal and keyboard access
 - Visible focus indicators, skip link, and reduced-motion support
 - Verified email, phone, and GitHub links
@@ -58,7 +58,7 @@ The site contains a profile photo and introduction, career objective, career int
 - `index.html` holds the content. Each navigation link points to a unique section ID.
 - `style.css` defines the theme variables and responsive layouts. Grid/flex layouts stack on smaller screens.
 - `interactions.css` contains the pill navigation, hover effects, portrait badge animation, and moving skills strip. Its reduced-motion media query stops decorative animations.
-- `script.js` toggles the mobile menu and `aria-expanded`, closes it with Escape or a selected link, updates the active navigation link and reveals sections with IntersectionObserver.
+- `script.js` toggles the mobile menu and `aria-expanded`, closes it with Escape or a selected link, updates the active navigation link and scroll-progress line, reveals sections with IntersectionObserver, and controls the ribbon pause button.
 - `images/tools/` contains local SVG logos. `images/profile.jpg` is the original portrait.
 
 The capability illustrations are decorative skill representations, not screenshots of claimed client projects. The Projects section accurately lists this portfolio as a course project with a repository link and an illustrated preview.

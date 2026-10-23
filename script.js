@@ -1,3 +1,16 @@
+// A pause control lets visitors stop the decorative skills ribbon.
+const ribbon = document.querySelector('.skills-ribbon');
+const ribbonToggle = document.querySelector('.ribbon-toggle');
+if (ribbon && ribbonToggle) {
+  ribbonToggle.hidden = false;
+  ribbonToggle.addEventListener('click', () => {
+    const paused = ribbonToggle.getAttribute('aria-pressed') !== 'true';
+    ribbonToggle.setAttribute('aria-pressed', String(paused));
+    ribbonToggle.textContent = paused ? 'Resume motion' : 'Pause motion';
+    ribbon.classList.toggle('is-paused', paused);
+  });
+}
+
 // Keep optional enhancements isolated if a future edit removes navigation.
 (() => {
 // Navigation remains usable without JavaScript; enhancement enables the mobile toggle.
@@ -6,7 +19,7 @@ const toggle = document.querySelector('.menu-toggle');
 const navigation = document.querySelector('#navigation');
 if (!header || !toggle || !navigation) return;
 const links = [...navigation.querySelectorAll('a')];
-const mobile = window.matchMedia('(max-width: 1100px)');
+const mobile = window.matchMedia('(max-width: 1000px)');
 
 toggle.hidden = false;
 header.classList.add('enhanced');
@@ -48,10 +61,13 @@ function updateNavigation() {
     if (link.hash === `#${current.id}`) link.setAttribute('aria-current', 'location');
     else link.removeAttribute('aria-current');
   });
+  const distance = document.documentElement.scrollHeight - window.innerHeight;
+  const progress = distance > 0 ? Math.min(100, Math.max(0, window.scrollY / distance * 100)) : 100;
+  header.style.setProperty('--progress', `${progress}%`);
 
   const label = document.querySelector('.menu-current');
   const activeLink = links.find(link => link.hash === `#${current.id}`);
-  if (label && activeLink) label.textContent = activeLink.textContent.trim();
+  if (label && activeLink) label.textContent = activeLink.textContent.slice(2);
   scheduled = false;
 }
 window.addEventListener('scroll', () => {
