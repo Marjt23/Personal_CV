@@ -19,10 +19,10 @@
 - [x] Location confirmed: Tagum City, Davao del Norte.
 - [x] Added the supplied LinkedIn profile and verified Cisco Networking Academy course-completion certificate.
 - [x] Push the latest source to GitHub (course content update: 8c0a31c).
-- [x] Existing Vercel site confirmed publicly accessible: https://personalcv-neon.vercel.app/ (latest additions require deployment verification).
+- [x] Existing Vercel site confirmed publicly accessible: https://personalcv-neon.vercel.app/ Latest location, LinkedIn, and certificate additions verified live.
 - [x] Record the verified public Vercel URL in README.md.
 - [ ] Check the deployed site in desktop, tablet, and mobile browsers; inspect for overflow, overlap, loaded images, usable menu, and readable text.
 - [ ] Test navigation, mailto/tel/GitHub links, Escape dismissal, and animation pause/resume on the deployed version.
 - [ ] Submit both the public Vercel URL and https://github.com/Marjt23/Personal_CV in the LMS.
 
-Local browser inspection was previously blocked for file:// URLs; source checks do not establish visual browser verification. Vercel account access requires authorization and a successful deployment before the assignment can be considered fully complete.
+The public HTTPS deployment was verified after commit d36e0f4: location and LinkedIn details are present, the certificate preview loads, the certificate PDF returns HTTP 200 with application/pdf, and the desktop viewport (1265px content width) has no horizontal overflow. Tablet/mobile browser testing remains a pre-submission check. No LMS submission has been made.
