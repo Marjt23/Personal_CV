@@ -1,11 +1,13 @@
 # Marjorie Casilao — Personal Portfolio
 
-An elegant editorial CV with deep burgundy accents, warm cream surfaces, muted antique gold details, an arched portrait frame, and the original profile photograph.
+An elegant editorial CV with deep burgundy accents, warm cream surfaces, muted antique gold details, a circular portrait with floating skill badges, and the original profile photograph.
 
 ## Features
 
-- Responsive hero, skills, experience, education timeline, and contact sections
-- Sticky chapter navigation with active section states and a subtle scroll progress line
+- Reference-inspired split hero, two-column capability showcases, side-by-side experience and education, portrait-led About, tools grid, and contact sections
+- Existing CV facts and cream/burgundy palette preserved; capability illustrations represent skill categories rather than invented projects
+- Rounded sticky navigation with active section pills and a subtle scroll progress line
+- Floating portrait badge, entrance transitions, and a moving skills strip with pause/resume controls
 - Expandable mobile menu with Escape dismissal and keyboard access
 - Visible focus indicators, skip link, and reduced-motion support
 - Verified email, phone, and GitHub links
@@ -32,7 +34,7 @@ The email was explicitly corrected by the owner. The existing photograph, educat
 
 ## Files
 
-`index.html`, `style.css`, `script.js`, `favicon.svg`, and `images/profile.jpg` form the static website. `preview.png` is an older development screenshot and is not used as social preview metadata.
+`index.html`, `style.css`, `interactions.css`, `script.js`, `favicon.svg`, and `images/profile.jpg` form the static website. `preview.png` is an older development screenshot and is not used as social preview metadata.
 
 ## Academic project context
 

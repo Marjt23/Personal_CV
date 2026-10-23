@@ -1,3 +1,16 @@
+// A pause control lets visitors stop the decorative skills ribbon.
+const ribbon = document.querySelector('.skills-ribbon');
+const ribbonToggle = document.querySelector('.ribbon-toggle');
+if (ribbon && ribbonToggle) {
+  ribbonToggle.hidden = false;
+  ribbonToggle.addEventListener('click', () => {
+    const paused = ribbonToggle.getAttribute('aria-pressed') !== 'true';
+    ribbonToggle.setAttribute('aria-pressed', String(paused));
+    ribbonToggle.textContent = paused ? 'Resume motion' : 'Pause motion';
+    ribbon.classList.toggle('is-paused', paused);
+  });
+}
+
 // Keep optional enhancements isolated if a future edit removes navigation.
 (() => {
 // Navigation remains usable without JavaScript; enhancement enables the mobile toggle.

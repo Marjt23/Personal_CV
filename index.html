@@ -14,17 +14,17 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="interactions.css">
   <script src="script.js" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
-  <div class="masthead container"><a class="monogram" href="#home" aria-label="Marjorie Casilao home">MC<span>.</span></a><span>PERSONAL PORTFOLIO / 2026</span><a href="mailto:marjoriecasilao@gmail.com">Let's talk ↗</a></div>
-  <header class="site-header">
+<header class="site-header">
     <div class="nav-shell">
-      <a class="dock-label" href="#home" aria-label="Marjorie Casilao home">MC.</a>
+      <a class="dock-label" href="#home" aria-label="Marjorie Casilao home"><span class="brand-dot" aria-hidden="true">M</span> Marjorie.</a>
       <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="navigation" hidden><span class="menu-current">Home</span><span class="menu-indicator" aria-hidden="true">+</span><span class="sr-only">Toggle section navigation</span></button>
       <nav id="navigation" aria-label="Section navigation">
-        <a href="#home" aria-current="location"><span>00</span>Home</a><a href="#about"><span>01</span>About</a><a href="#skills"><span>02</span>Skills</a><a href="#experience"><span>03</span>Experience</a><a href="#education"><span>04</span>Education</a><a href="#contact"><span>05</span>Contact</a>
+        <a href="#home" aria-current="location"><span>00</span>Home</a><a href="#skills"><span>01</span>Skills</a><a href="#experience"><span>02</span>Experience</a><a href="#education"><span>03</span>Education</a><a href="#about"><span>04</span>About</a><a href="#tools"><span>05</span>Tools</a><a href="#contact"><span>06</span>Contact Me</a>
       </nav>
       
     </div>
@@ -33,11 +33,11 @@
   <main id="main">
     <section id="home" class="hero container">
       <div class="hero-copy">
-        <p class="eyebrow"><span class="short-line"></span> Hello, I'm</p>
-        <h1>Marjorie<br><em>Casilao<span>.</span></em></h1>
+        <p class="eyebrow"><span class="short-line"></span> Hello There!</p>
+        <h1>I’m <em>Marjorie Casilao,</em><br>an Information Technology student.</h1>
         <p class="hero-title">BS Information Technology Student</p>
         <p class="hero-description">An organized and adaptable IT student bringing care and clarity to administrative support, documentation, online learning platforms, and foundational web development.</p>
-        <div class="hero-actions"><a class="button primary" href="#about">Explore My CV <span aria-hidden="true">↗</span></a><a class="button secondary" href="#contact">Contact Me <span aria-hidden="true">→</span></a></div>
+        <div class="hero-actions"><a class="button primary" href="#skills">Explore My CV <span aria-hidden="true">↗</span></a><a class="button secondary" href="#contact">Contact Me <span aria-hidden="true">→</span></a></div>
         <p class="hero-note"><span aria-hidden="true">✧</span> Always learning. Thoughtfully growing.</p>
       </div>
       <div class="portrait-composition">
@@ -46,27 +46,47 @@
         <div class="floating-card"><span class="card-symbol" aria-hidden="true">↗</span><div><strong>Open to learning & growth</strong><span>Building skills with purpose</span></div></div>
         <span class="small-spark" aria-hidden="true">✧</span>
       </div>
-      <a class="scroll-cue" href="#about"><span aria-hidden="true">↓</span> A little more about me</a>
+      <a class="scroll-cue" href="#skills"><span aria-hidden="true">↓</span> A little more about me</a>
     </section>
-    <section id="about" class="about section-pad">
-      <div class="container about-grid reveal">
-        <div><p class="eyebrow">01 / Get to know me</p><h2>A thoughtful mind.<br><em>A dependable approach.</em></h2><p class="section-alias">About Me</p></div>
-        <div class="about-copy"><p class="lead">I enjoy bringing order to tasks and care to the work I do.</p><p>I'm Marjorie, a Bachelor of Science in Information Technology student at Davao del Norte State College. Motivated, responsible, and detail-oriented, I approach each opportunity with a willingness to learn and adapt.</p><p>My experience in assessment management and administrative support has helped me develop a structured approach to documentation, task tracking, and communication. I'm comfortable working independently and collaborating with a team as I continue growing my IT and professional skills.</p><div class="traits"><div><span aria-hidden="true">▤</span><strong>Organized</strong></div><div><span aria-hidden="true">↗</span><strong>Adaptable</strong></div><div><span aria-hidden="true">◎</span><strong>Team-Oriented</strong></div></div></div>
-      </div>
-    </section>
+    <div class="skills-ribbon" aria-label="Skills at a glance">
+      <div class="ribbon-window"><div class="ribbon-track">
+        <p>Documentation <span>✦</span> HTML &amp; CSS <span>✦</span> Task Management <span>✦</span> Moodle Monitoring <span>✦</span> Teamwork <span>✦</span></p>
+        <p aria-hidden="true">Documentation <span>✦</span> HTML &amp; CSS <span>✦</span> Task Management <span>✦</span> Moodle Monitoring <span>✦</span> Teamwork <span>✦</span></p>
+      </div></div>
+      <button class="ribbon-toggle" type="button" aria-pressed="false" hidden>Pause motion</button>
+    </div>
+
     <section id="skills" class="container section-pad">
-      <div class="section-heading reveal"><div><p class="eyebrow">02 / My toolkit</p><h2>Skills with <em>purpose.</em></h2></div><p>A growing foundation of practical tools,<br>technical knowledge, and people skills.</p></div>
+      <div class="section-heading reveal"><div><p class="eyebrow">Skills &amp; capabilities</p><h2>Skills with <em>purpose.</em></h2></div><p>A growing foundation of practical tools,<br>technical knowledge, and people skills.</p></div>
       <div class="skills-grid">
-        <article class="skill-card reveal"><span class="skill-icon" aria-hidden="true">▦</span><span class="skill-number">01</span><h3>Computer Applications</h3><p>Everyday tools for organized work.</p><ul class="chips"><li>Microsoft Word</li><li>Microsoft Excel</li><li>Microsoft PowerPoint</li><li>Google Docs</li><li>Google Drive</li></ul></article>
-        <article class="skill-card reveal"><span class="skill-icon code-icon" aria-hidden="true">&lt;/&gt;</span><span class="skill-number">02</span><h3>Web Development</h3><p>Foundational knowledge. Growing curiosity.</p><ul class="chips"><li>HTML</li><li>CSS</li></ul><span class="skill-footnote">Building a foundation, one detail at a time.</span></article>
+        <article class="skill-card featured-skill reveal"><div class="skill-preview office-preview" aria-hidden="true"><div class="document-sheet"><span>DOCUMENTATION</span><b>Clarity in<br>every detail.</b><i></i><i></i><i></i><div class="document-apps"><img src="images/tools/microsoftword.svg" alt="" width="32" height="32"><img src="images/tools/microsoftexcel.svg" alt="" width="32" height="32"><img src="images/tools/microsoftpowerpoint.svg" alt="" width="32" height="32"></div></div><span class="preview-seal">WORK · ORGANIZE · LEARN</span></div><div class="skill-card-copy"><span class="skill-icon" aria-hidden="true">▦</span><span class="skill-number">01</span><h3>Computer Applications</h3><p>Everyday tools for organized work.</p><ul class="chips"><li>Microsoft Word</li><li>Microsoft Excel</li><li>Microsoft PowerPoint</li><li>Google Docs</li><li>Google Drive</li></ul></div></article>
+        <article class="skill-card featured-skill reveal"><div class="skill-preview web-preview" aria-hidden="true"><div class="browser-sheet"><div class="browser-bar">● ● ● <span>Foundations / HTML &amp; CSS</span></div><div class="browser-content"><small>THOUGHTFULLY BUILT</small><b>A foundation<br>for what's next.</b><div class="web-logos"><img src="images/tools/html5.svg" alt="" width="40" height="40"><img src="images/tools/css3.svg" alt="" width="40" height="40"><span>&lt;learn&gt; &lt;create&gt; &lt;grow&gt;</span></div></div></div></div><div class="skill-card-copy"><span class="skill-icon code-icon" aria-hidden="true">&lt;/&gt;</span><span class="skill-number">02</span><h3>Web Development</h3><p>Foundational knowledge. Growing curiosity.</p><ul class="chips"><li>HTML</li><li>CSS</li></ul><span class="skill-footnote">Building a foundation, one detail at a time.</span></div></article>
         <article class="skill-card reveal"><span class="skill-icon" aria-hidden="true">▤</span><span class="skill-number">03</span><h3>Technical & Administrative</h3><p>Structure and attention to detail.</p><ul class="chips"><li>Basic computer troubleshooting</li><li>File management</li><li>Data entry</li><li>Documentation</li></ul></article>
         <article class="skill-card reveal"><span class="skill-icon" aria-hidden="true">▣</span><span class="skill-number">04</span><h3>Learning Platforms</h3><p>Keeping learning tasks on track.</p><ul class="chips"><li>Moodle monitoring</li><li>Assessment tracking</li><li>Feedback monitoring</li></ul></article>
         <article class="skill-card professional reveal"><span class="skill-icon" aria-hidden="true">◎</span><span class="skill-number">05</span><h3>Professional Skills</h3><p>The human side of getting things done.</p><ul class="chips"><li>Communication</li><li>Teamwork</li><li>Time management</li><li>Adaptability</li><li>Organization</li><li>Problem solving</li></ul></article>
       </div>
     </section>
     <section class="bring container reveal" aria-labelledby="bring-title"><h2 class="eyebrow" id="bring-title">What I bring</h2><div class="bring-grid"><article><span>01</span><h3>Organization & Documentation</h3><p>Keeping files, records, and assessment tasks structured and easy to follow.</p></article><article><span>02</span><h3>Technology & Learning</h3><p>A practical foundation in digital tools and a willingness to develop new IT skills.</p></article><article><span>03</span><h3>Communication & Teamwork</h3><p>Sharing clear updates and working with others to keep tasks moving forward.</p></article></div></section>
-    <section id="experience" class="experience section-pad"><div class="container reveal"><div class="section-heading"><div><p class="eyebrow">03 / Putting care into practice</p><h2>Professional <em>experience.</em></h2></div><p>Responsibility, consistency,<br>and attention to the details.</p></div><article class="experience-card"><div class="experience-meta"><span class="status"><span></span>2024 — Present</span><h3>General Task<br> Manager</h3><p class="company">Canterbury Technology</p><p class="location"><span aria-hidden="true">⌖</span> Queensland, Australia</p><div class="experience-mark" aria-hidden="true">MC.</div></div><div class="responsibilities"><p class="eyebrow">How I contribute</p><ul><li>Assist with completing and reviewing assessment tasks against requirements.</li><li>Monitor Moodle for assessment updates, feedback, and trainer comments.</li><li>Track assessment submissions and follow up on revisions and incomplete tasks.</li><li>Organize assessment files and maintain clear records of task progress.</li><li>Communicate assessment updates and requirements to the appropriate team members.</li></ul></div></article></div></section>
-    <section id="education" class="container section-pad education-grid reveal"><div><p class="eyebrow">04 / The learning journey</p><h2>Rooted in learning.<br><em>Looking ahead.</em></h2><p class="section-alias">Education</p><p class="education-note">Every chapter builds the foundation<br>for what comes next.</p></div><div class="timeline"><article class="current"><p class="timeline-date">2023 — Present <span>Current</span></p><h3>Bachelor of Science in Information Technology</h3><p>Davao del Norte State College</p></article><article><p class="timeline-date">2020 — 2023</p><h3>Senior High School — GAS Track</h3><p>Magdum National High School</p></article><article><p class="timeline-date">2016 — 2020</p><h3>Junior High School</h3><p>Magdum National High School</p></article><article><p class="timeline-date">2011 — 2016</p><h3>Elementary Education</h3><p>Suaybaguio Riña Elementary School</p></article></div></section>
+    <div class="background-band"><div class="container background-layout">
+    <section id="experience" class="experience section-pad"><div class="container reveal"><div class="section-heading"><div><p class="eyebrow">Professional background</p><h2>Professional <em>experience.</em></h2></div><p>Responsibility, consistency,<br>and attention to the details.</p></div><article class="experience-card"><div class="experience-meta"><span class="status"><span></span>2024 — Present</span><h3>General Task<br> Manager</h3><p class="company">Canterbury Technology</p><p class="location"><span aria-hidden="true">⌖</span> Queensland, Australia</p><div class="experience-mark" aria-hidden="true">MC.</div></div><div class="responsibilities"><p class="eyebrow">How I contribute</p><ul><li>Assist with completing and reviewing assessment tasks against requirements.</li><li>Monitor Moodle for assessment updates, feedback, and trainer comments.</li><li>Track assessment submissions and follow up on revisions and incomplete tasks.</li><li>Organize assessment files and maintain clear records of task progress.</li><li>Communicate assessment updates and requirements to the appropriate team members.</li></ul></div></article></div></section>
+    <section id="education" class="container section-pad education-grid reveal"><div><p class="eyebrow">Academic background</p><h2>Rooted in learning.<br><em>Looking ahead.</em></h2><p class="section-alias">Education</p><p class="education-note">Every chapter builds the foundation<br>for what comes next.</p></div><div class="timeline"><article class="current"><p class="timeline-date">2023 — Present <span>Current</span></p><h3>Bachelor of Science in Information Technology</h3><p>Davao del Norte State College</p></article><article><p class="timeline-date">2020 — 2023</p><h3>Senior High School — GAS Track</h3><p>Magdum National High School</p></article><article><p class="timeline-date">2016 — 2020</p><h3>Junior High School</h3><p>Magdum National High School</p></article><article><p class="timeline-date">2011 — 2016</p><h3>Elementary Education</h3><p>Suaybaguio Riña Elementary School</p></article></div></section>
+    </div></div>
+    <section id="about" class="about section-pad">
+      <div class="container about-grid reveal">
+        <div class="about-visual"><img src="images/profile.jpg" alt="Marjorie Casilao" loading="lazy"><span class="about-tag tag-one">Organized</span><span class="about-tag tag-two">Adaptable</span><span class="about-tag tag-three">Detail-oriented</span></div>
+        <div class="about-copy"><p class="eyebrow">About Me</p><h2>Who is <em>Marjorie Casilao?</em></h2><p class="lead">I enjoy bringing order to tasks and care to the work I do.</p><p>I'm Marjorie, a Bachelor of Science in Information Technology student at Davao del Norte State College. Motivated, responsible, and detail-oriented, I approach each opportunity with a willingness to learn and adapt.</p><p>My experience in assessment management and administrative support has helped me develop a structured approach to documentation, task tracking, and communication. I'm comfortable working independently and collaborating with a team as I continue growing my IT and professional skills.</p><div class="traits"><div><span aria-hidden="true">▤</span><strong>Organized</strong></div><div><span aria-hidden="true">↗</span><strong>Adaptable</strong></div><div><span aria-hidden="true">◎</span><strong>Team-Oriented</strong></div></div><p class="signature">Marjorie Casilao</p></div>
+      </div>
+    </section>
+    <section id="tools" class="container section-pad tools-section reveal"><p class="eyebrow">My everyday toolkit</p><h2>The tools behind<br><em>organized work.</em></h2><div class="tools-grid">
+      <div class="tool"><img src="images/tools/microsoftword.svg" alt="" width="44" height="44" loading="lazy"><h3>Microsoft Word</h3></div>
+      <div class="tool"><img src="images/tools/microsoftexcel.svg" alt="" width="44" height="44" loading="lazy"><h3>Microsoft Excel</h3></div>
+      <div class="tool"><img src="images/tools/microsoftpowerpoint.svg" alt="" width="44" height="44" loading="lazy"><h3>PowerPoint</h3></div>
+      <div class="tool"><img src="images/tools/googledocs.svg" alt="" width="44" height="44" loading="lazy"><h3>Google Docs</h3></div>
+      <div class="tool"><img src="images/tools/googledrive.svg" alt="" width="44" height="44" loading="lazy"><h3>Google Drive</h3></div>
+      <div class="tool"><img src="images/tools/html5.svg" alt="" width="44" height="44" loading="lazy"><h3>HTML5</h3></div>
+      <div class="tool"><img src="images/tools/css3.svg" alt="" width="44" height="44" loading="lazy"><h3>CSS3</h3></div>
+      <div class="tool"><img src="images/tools/moodle.svg" alt="" width="44" height="44" loading="lazy"><h3>Moodle</h3></div>
+    </div></section>
     <section id="contact" class="contact"><div class="container contact-inner reveal"><p class="eyebrow">05 / Start a conversation</p><h2>Let's <em>connect.</em><span aria-hidden="true">✧</span></h2><p>I'm always open to learning opportunities,<br>collaboration, and professional connections.</p><div class="contact-links"><a href="mailto:marjoriecasilao@gmail.com"><span>Email <b aria-hidden="true">↗</b></span><strong>marjoriecasilao@gmail.com</strong></a><a href="tel:09657550712"><span>Phone <b aria-hidden="true">↗</b></span><strong>09657550712</strong></a></div><a class="github-link" href="https://github.com/Marjt23" target="_blank" rel="noopener noreferrer">Find me on GitHub <span aria-hidden="true">↗</span></a></div></section>
   </main>
   <footer class="container"><div><a class="footer-name" href="#home">Marjorie Casilao<span>.</span></a><p>Designed with care and curiosity.</p></div><p class="copyright">© 2026 Marjorie Casilao. All rights reserved.</p><a class="back-top" href="#home" aria-label="Back to top">↑</a></footer>
