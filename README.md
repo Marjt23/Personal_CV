@@ -48,9 +48,10 @@ Student name: **Marjorie Casilao**. Program: **Bachelor of Science in Informatio
 The site contains a profile photo and introduction, career objective, career interests, education, technical and professional skills, the Personal CV Website project, professional experience, GitHub profile, and contact links. The existing cream/burgundy design is retained.
 
 - Source repository: [Marjt23/Personal_CV](https://github.com/Marjt23/Personal_CV)
-- Live Vercel link: **pending verified deployment**. Do not submit an unverified URL.
-- Location: awaiting the owner's city/province.
-- LinkedIn, other social accounts, achievements, and certifications: omitted because verified details were not supplied. These are conditional requirements in the assignment.
+- Live Vercel link: [personalcv-neon.vercel.app](https://personalcv-neon.vercel.app/) — confirmed publicly accessible.
+- Location: Tagum City, Davao del Norte.
+- LinkedIn: https://www.linkedin.com/in/marnaih-casilao-b83548446/
+- Achievement: CCNA: Switching, Routing, and Wireless Essentials, completed 19 November 2025 through Cisco Networking Academy, offered by Davao del Norte State College. This is a course-completion certificate, not a claim of passing the CCNA certification exam. The original PDF and a rendered preview are included.
 
 ## Understanding the code
 

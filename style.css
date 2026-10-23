@@ -174,3 +174,18 @@ footer { display:flex; gap:20px; justify-content:space-between; align-items:cent
 .project-description { padding:35px; min-width:0; }.project-description h3 { font-size:24px; margin:20px 0 13px; }.project-description p { color:var(--muted); font-size:13px; }.project-description .project-context { font-size:10px; margin-top:16px; }.project-actions { display:flex; flex-wrap:wrap; gap:10px; margin-top:24px; }.project-actions .button { font-size:10px; padding:12px 16px; }
 .career-objective,.career-interests { margin-top:22px; }.career-objective h3,.career-interests h3 { color:var(--gold); font-size:12px; margin-bottom:8px; }.career-objective p,.career-interests p { color:#eddbc6; font-size:12px; }.traits { margin-top:18px; }
 @media(max-width:767px) { .project-card { grid-template-columns:1fr; }.project-preview { padding:20px; }.project-description { padding:25px; } }
+
+/* Verified personal details and course certificate. */
+.profile-location { font-size:11px; color:var(--muted); margin-top:6px; }
+.contact-location { color:#eddbc6; font-size:12px; margin-top:20px; }
+.linkedin-link { display:inline-block; margin-left:24px; }
+.certificate-card { display:grid; grid-template-columns:1.1fr 1fr; gap:40px; align-items:center; padding:28px; border:1px solid var(--line); background:#fffaf3; border-radius:20px; }
+.certificate-preview img { display:block; width:100%; height:auto; border:1px solid var(--line); transition:transform var(--transition); }
+.certificate-preview:hover img { transform:scale(1.015); }
+.certificate-type { display:inline-block; font-size:10px; padding:5px 12px; background:var(--parchment); color:var(--primary); border-radius:20px; }
+.certificate-details h3 { font-size:23px; margin:15px 0; }
+.certificate-details p { font-size:12px; color:var(--muted); margin-bottom:16px; }
+.certificate-details .button { margin-top:8px; font-size:11px; }
+.section-alias a { text-decoration:underline; text-underline-offset:4px; }
+@media(max-width:767px) { .certificate-card { grid-template-columns:1fr; gap:24px; padding:20px; }.certificate-details h3 { font-size:21px; }.linkedin-link { margin-left:18px; } }
+@media(prefers-reduced-motion:reduce) { .certificate-preview:hover img { transform:none; } }

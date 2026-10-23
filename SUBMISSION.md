@@ -16,11 +16,11 @@
 
 ## Needed before LMS submission
 
-- [ ] Confirm the city/province to display; no location has been invented.
-- [ ] Add other projects, LinkedIn, achievements, or certificates only if applicable and verified.
+- [x] Location confirmed: Tagum City, Davao del Norte.
+- [x] Added the supplied LinkedIn profile and verified Cisco Networking Academy course-completion certificate.
 - [x] Push the latest source to GitHub (course content update: 8c0a31c).
-- [ ] Connect the repository to the intended Vercel project and deploy.
-- [ ] Record the verified public Vercel URL in README.md.
+- [x] Existing Vercel site confirmed publicly accessible: https://personalcv-neon.vercel.app/ (latest additions require deployment verification).
+- [x] Record the verified public Vercel URL in README.md.
 - [ ] Check the deployed site in desktop, tablet, and mobile browsers; inspect for overflow, overlap, loaded images, usable menu, and readable text.
 - [ ] Test navigation, mailto/tel/GitHub links, Escape dismissal, and animation pause/resume on the deployed version.
 - [ ] Submit both the public Vercel URL and https://github.com/Marjt23/Personal_CV in the LMS.
