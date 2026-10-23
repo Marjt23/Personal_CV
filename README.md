@@ -26,7 +26,7 @@ Compatible with GitHub Pages and Vercel. Publish the repository root for GitHub 
 
 ## Contact
 
-- Email: [marjoriecasilao@gmail.com](mailto:marjoriecasilao@gmail.com)
+- Email: [marnaihcasilao@gmail.com](mailto:marnaihcasilao@gmail.com)
 - Phone: [09657550712](tel:09657550712)
 - GitHub: [github.com/Marjt23](https://github.com/Marjt23)
 
