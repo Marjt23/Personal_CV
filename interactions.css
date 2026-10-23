@@ -45,13 +45,19 @@ nav a:last-child:hover, nav a:last-child[aria-current] { background: var(--parch
   nav a { padding: 10px; }
   .nav-shell { gap: 10px; }
 }
-@media(max-width:767px) {
+@media(max-width:1000px) {
   .site-header { width: calc(100% - 32px); border-radius: 24px; }
   .nav-shell { gap: 8px; padding: 10px 16px; }
   .dock-label { font-size: 16px; }
   .brand-dot { width: 28px; height: 28px; }
   .enhanced .menu-toggle { width: auto; gap: 14px; margin-left: auto; min-height: 44px; padding: 0 4px; }
-  .menu-open nav { flex-basis: 100%; }
+  nav { width:100%; display:grid; grid-template-columns:1fr 1fr; }
+  .enhanced nav { display:none; }
+  .menu-open nav { display:grid; order:3; flex-basis:100%; max-height:65dvh; overflow-y:auto; padding-block:10px; }
+  .enhanced .menu-toggle { display:flex; align-items:center; background:none; border:0; color:var(--paper); cursor:pointer; }
+  .menu-indicator { font-size:24px; }
+  .menu-open .menu-indicator { transform:rotate(45deg); }
+  nav a>span { display:inline-block; font-size:9px; margin-right:8px; opacity:.7; }
   nav a { min-height: 44px; }
   nav a:last-child { margin-left: 0; }
   .skills-ribbon { padding: 10px 14px; gap: 10px; }

@@ -19,7 +19,7 @@ const toggle = document.querySelector('.menu-toggle');
 const navigation = document.querySelector('#navigation');
 if (!header || !toggle || !navigation) return;
 const links = [...navigation.querySelectorAll('a')];
-const mobile = window.matchMedia('(max-width: 767px)');
+const mobile = window.matchMedia('(max-width: 1000px)');
 
 toggle.hidden = false;
 header.classList.add('enhanced');
