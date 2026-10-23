@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Marjorie Casilao — Personal CV
 
 A responsive personal portfolio with a navy and soft blue palette, an editorial layout, angled portrait, floating chapter navigation with reading progress, serif headings, the original portrait, and verified CV content. Built with HTML, CSS, and vanilla JavaScript. No build process or dependencies are required.
@@ -34,3 +35,27 @@ The original CV supplies the portrait, email, phone, skills, experience, and edu
 - Subject: IT 415 APPLICATION DEVELOPMENT AND EMERGING TECHNOLOGIES
 
 Originally created as an HTML/CSS CV activity for GitHub repository and personal webpage practice; redesigned into a professional student portfolio.
+=======
+# Personal CV Website
+
+## Student Information
+
+Complete Name: Marjorie Casilao  
+Year Level: 4th Year  
+Set/Section: C 
+Subject: IT 415 APPLICATION DEVELOPMENT AND EMERGING TECHNOLOGIES
+
+## About the Project
+
+This project is a simple personal Curriculum Vitae (CV) website created using HTML and CSS.
+
+The website contains information about my:
+
+- Personal profile
+- Technical skills
+- Professional experience
+- Education
+- Contact information
+
+This project was created as part of our activity in creating a GitHub repository and personal CV webpage.
+>>>>>>> cfd6c974c65199d111bc5a45fa348608da932bfc
