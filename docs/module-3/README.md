@@ -66,7 +66,7 @@ The desktop automation helper could not connect during this session. Dashboard s
 
 ## Knowledge-check answers
 
-1. C: push/merge to the configured production branch.
+1. B: push/merge to the configured production branch.
 2. False: browser-exposed environment values are public.
 3. Preview isolates review/testing from production.
 4. Check the variable's exact name, intended environment scope, frontend exposure rules, and whether a fresh deployment includes the change.
@@ -74,5 +74,9 @@ The desktop automation helper could not connect during this session. Dashboard s
 6. False: the production branch is configurable.
 7. Cloud filesystems commonly distinguish Navbar.jsx from navbar.jsx.
 8. Restore an eligible known-good production deployment using rollback.
-9. B: CNAME is the common subdomain setup; follow the actual domain instructions.
+9. C: CNAME is the common subdomain setup; follow the actual domain instructions.
 10. Preview helps catch regressions before they affect public users.
+
+## Current publishing blocker
+
+The branch commit could not be pushed: GitHub returned HTTP 403, permission denied to account `2d1e3th` for `Marjt23/Personal_CV`. Correct Git authentication or repository collaborator access before retrying `git push -u origin codex/module-3-deployment-lab`. This is a Git authorization error, not a Vercel build failure. Production remains unchanged. The public GitHub repository API was separately verified with HTTP 200.
