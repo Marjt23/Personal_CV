@@ -53,12 +53,12 @@ A rollback changes production traffic. Carry it out only during an explicitly ap
 - [x] Homepage and About page implemented
 - [x] External API call and environment-variable support implemented
 - [x] Source checks and local production build
-- [ ] Preview deployment URL verified
+- [x] Preview deployment URL verified
 - [ ] Screenshot: successful production deployment (dashboard)
-- [ ] Screenshot: preview deployment
+- [x] Screenshot: preview website with live API output
 - [ ] Screenshot: deployment history
-- [ ] Screenshot: deployment build logs
-- [ ] Real cloud deployment error and solution explanation
+- [x] Screenshot: failed deployment build logs
+- [x] Real cloud deployment error and solution explanation
 - [ ] Vercel rollback demonstration
 - [ ] Review, merge, and latest production verification
 
@@ -79,6 +79,14 @@ The desktop automation helper could not connect during this session. Dashboard s
 
 ## Current deployment status
 
-GitHub access was rechecked successfully: the lab branch now exists on origin. The branch's Vercel check for commit 5826f7d is marked failure. Its public status links to https://vercel.com/marjt23s-projects/personal_cv/D9bwwFAXQmo97r3KyCCWrVjcmpco . The build log is not available through the current tools, so the failure cause has not been asserted. Confirm Preview/Production PUBLIC_GITHUB_USERNAME and inspect the first build-log error before changing deployment configuration.
+The Preview deployment succeeded after PUBLIC_GITHUB_USERNAME=Marjt23 was added in Vercel and the Preview was redeployed. The GitHub Vercel check reports success at https://vercel.com/marjt23s-projects/personal_cv/EL96NN8dXH6Z6CA2BsfSXeQVkvX7 .
 
-Local HTTP verification returned 200 for /, /about.html, /site-config.json, /github-project.js, and the certificate PDF. Three automated tests pass: repository success without credentials, offline failure/retry recovery, and rejection of invalid configuration before an external request. Production remains unchanged until a preview is verified and merged.
+The owner-supplied screenshot `evidence/preview-github-api-working.png` confirms the real API results: Marjt23/Personal_CV, CSS, and the last push date. This verifies the external request and generated public configuration in the deployed Preview. Preview URL: https://personalcv-git-codex-module-3-deployment-lab-marjt23s-projects.vercel.app/ . Vercel sign-in may be required for that preview.
+
+### Actual cloud build error and solution
+
+The first Preview build completed source checks but failed at scripts/build.mjs:17 because PUBLIC_GITHUB_USERNAME was missing. See `evidence/failed-preview-build-log.png`. The local .env was correctly ignored by Git and therefore did not configure Vercel. The fix was to add PUBLIC_GITHUB_USERNAME=Marjt23 in the Vercel project's environment variables for the intended environments, then redeploy Preview using current settings. The new Preview succeeded and loaded public repository metadata. No production error was deliberately introduced.
+
+`evidence/previous-production-ready.png` shows the earlier main deployment marked Ready; it is not evidence of the new lab release. Capture the new production deployment after the merge, deployment history, and the successful build log for the final submission. The Vercel rollback demonstration remains pending and has not been claimed as complete.
+
+Local HTTP verification returned 200 for /, /about.html, /site-config.json, /github-project.js, and the certificate PDF. Three automated tests pass: repository success without credentials, offline failure/retry recovery, and rejection of invalid configuration before an external request.
