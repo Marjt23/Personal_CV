@@ -77,6 +77,8 @@ The desktop automation helper could not connect during this session. Dashboard s
 9. C: CNAME is the common subdomain setup; follow the actual domain instructions.
 10. Preview helps catch regressions before they affect public users.
 
-## Current publishing blocker
+## Current deployment status
 
-The branch commit could not be pushed: GitHub returned HTTP 403, permission denied to account `2d1e3th` for `Marjt23/Personal_CV`. Correct Git authentication or repository collaborator access before retrying `git push -u origin codex/module-3-deployment-lab`. This is a Git authorization error, not a Vercel build failure. Production remains unchanged. The public GitHub repository API was separately verified with HTTP 200.
+GitHub access was rechecked successfully: the lab branch now exists on origin. The branch's Vercel check for commit 5826f7d is marked failure. Its public status links to https://vercel.com/marjt23s-projects/personal_cv/D9bwwFAXQmo97r3KyCCWrVjcmpco . The build log is not available through the current tools, so the failure cause has not been asserted. Confirm Preview/Production PUBLIC_GITHUB_USERNAME and inspect the first build-log error before changing deployment configuration.
+
+Local HTTP verification returned 200 for /, /about.html, /site-config.json, /github-project.js, and the certificate PDF. Three automated tests pass: repository success without credentials, offline failure/retry recovery, and rejection of invalid configuration before an external request. Production remains unchanged until a preview is verified and merged.

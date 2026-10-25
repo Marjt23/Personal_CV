@@ -14,7 +14,7 @@ An elegant editorial CV with deep burgundy accents, warm cream surfaces, muted a
 
 ## Technology
 
-HTML5, CSS3, and vanilla JavaScript. Google Fonts provides Playfair Display and DM Sans, with system font fallbacks. No framework, build process, backend, or contact submission service is needed.
+HTML5, CSS3, and vanilla JavaScript. Google Fonts provides Playfair Display and DM Sans, with system font fallbacks. No framework, backend, or contact submission service is needed. The Module 3 branch adds a dependency-free Node.js static build.
 
 ## Running locally
 
@@ -79,4 +79,4 @@ The current design uses a large Portfolio cover heading, a centered portrait, an
 
 The Module 3 work adds an About page, live public GitHub repository metadata, and a dependency-free Node.js static build. Copy `.env.example` to `.env`, then run `npm run check`, `npm run build`, and `npm run dev`. Vercel uses `vercel.json` to build `dist/`; set `PUBLIC_GITHUB_USERNAME=Marjt23` in its environment settings. The value is intentionally public; never use a token here.
 
-See [the lab record](docs/module-3/README.md) for evidence requirements, local failure/fix logs, preview/release workflow, rollback guidance, and the current GitHub authorization blocker. These additions are local on `codex/module-3-deployment-lab` and are not yet deployed.
+See [the lab record](docs/module-3/README.md) for evidence requirements, local failure/fix logs, preview/release workflow, rollback guidance, and the current GitHub authorization blocker. These additions are on `codex/module-3-deployment-lab`; the GitHub push succeeded, but the Preview deployment requires build-log diagnosis before release.
