@@ -1,0 +1,2 @@
+Source checks passed: pages, unique IDs, local links/assets, alt text, CSS braces.
+Static build complete: dist/; public GitHub account: Marjt23

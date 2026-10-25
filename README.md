@@ -14,7 +14,7 @@ An elegant editorial CV with deep burgundy accents, warm cream surfaces, muted a
 
 ## Technology
 
-HTML5, CSS3, and vanilla JavaScript. Google Fonts provides Playfair Display and DM Sans, with system font fallbacks. No framework, build process, backend, or contact submission service is needed.
+HTML5, CSS3, and vanilla JavaScript. Google Fonts provides Playfair Display and DM Sans, with system font fallbacks. No framework, backend, or contact submission service is needed. The Module 3 branch adds a dependency-free Node.js static build.
 
 ## Running locally
 
@@ -74,3 +74,9 @@ Blood Ties is a group film from a first-year subject, recognized for Best Produc
 ## Editorial cover layout
 
 The current design uses a large Portfolio cover heading, a centered portrait, and a continuous ruled grid inspired by the owner-supplied reference. Existing cream, burgundy, and gold colors and all verified CV facts are retained. `editorial.css` supplies the focused layout layer; mobile navigation and reduced-motion support remain available.
+
+## Module 3 lab branch
+
+The Module 3 work adds an About page, live public GitHub repository metadata, and a dependency-free Node.js static build. Copy `.env.example` to `.env`, then run `npm run check`, `npm run build`, and `npm run dev`. Vercel uses `vercel.json` to build `dist/`; set `PUBLIC_GITHUB_USERNAME=Marjt23` in its environment settings. The value is intentionally public; never use a token here.
+
+See [the lab record](docs/module-3/README.md) for evidence requirements, local failure/fix logs, preview/release workflow, rollback guidance, and the current GitHub authorization blocker. These additions are on `codex/module-3-deployment-lab`; the GitHub push and Preview deployment succeeded. The owner verified live GitHub metadata in Preview; see the lab record for the real missing-variable error, its fix, and evidence.
