@@ -60,7 +60,7 @@ A rollback changes production traffic. Carry it out only during an explicitly ap
 - [x] Screenshot: failed deployment build logs
 - [x] Real cloud deployment error and solution explanation
 - [ ] Vercel rollback demonstration
-- [ ] Review, merge, and latest production verification
+- [x] Reviewed Preview and merged the lab into main; production verified after b65cb81
 
 The desktop automation helper could not connect during this session. Dashboard screenshots, logs, and rollback are not claimed as completed. The module's dashboard screenshots are teaching placeholders, not actual project evidence.
 
@@ -93,4 +93,8 @@ Local HTTP verification returned 200 for /, /about.html, /site-config.json, /git
 
 ## Public portfolio cleanup
 
-At the owner’s request, the repository metadata panel and its script include were removed from the public homepage. The source implementation, automated tests, Preview evidence, and environment configuration remain available for the lab record. The homepage no longer makes the external GitHub API call; therefore the current public homepage does not demonstrate that lab requirement.
+At the owner’s request, the repository metadata panel and its script include were removed from the public homepage. The source implementation, automated tests, Preview evidence, and environment configuration remain available for the lab record. The homepage no longer makes the external GitHub API call. The same working API integration now has its own course demonstration at /deployment-lab.html, preserving the public CV layout.
+
+## Final submission package
+
+See `SUBMISSION-REPORT.md` for links, a concise error/solution explanation, evidence index, and the precise dashboard-only work that remains. API support is now isolated on the separate deployment lab page; the homepage remains unchanged.

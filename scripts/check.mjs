@@ -3,7 +3,7 @@ import { resolve, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
-for (const name of ['index.html', 'about.html']) {
+for (const name of ['index.html', 'about.html', 'deployment-lab.html']) {
   const html = await readFile(resolve(root, name), 'utf8');
   for (const tag of ['html', 'head', 'body']) {
     if ((html.match(new RegExp(`<${tag}(?:\\s|>)`, 'g')) || []).length !== 1) {

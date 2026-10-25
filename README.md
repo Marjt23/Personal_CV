@@ -80,3 +80,7 @@ The current design uses a large Portfolio cover heading, a centered portrait, an
 The Module 3 work adds an About page, live public GitHub repository metadata, and a dependency-free Node.js static build. Copy `.env.example` to `.env`, then run `npm run check`, `npm run build`, and `npm run dev`. Vercel uses `vercel.json` to build `dist/`; set `PUBLIC_GITHUB_USERNAME=Marjt23` in its environment settings. The value is intentionally public; never use a token here.
 
 See [the lab record](docs/module-3/README.md) for evidence requirements, local failure/fix logs, preview/release workflow, rollback guidance, and the current GitHub authorization blocker. These additions are on `codex/module-3-deployment-lab`; the GitHub push and Preview deployment succeeded. The owner verified live GitHub metadata in Preview; see the lab record for the real missing-variable error, its fix, and evidence.
+
+## Submission demonstration
+
+The public CV homepage omits technical repository metadata at the owner’s request. The Module 3 external API and public environment-variable demonstration is available separately at [deployment-lab.html](https://personalcv-neon.vercel.app/deployment-lab.html). Submission notes and the evidence index are in [the report](docs/module-3/SUBMISSION-REPORT.md).

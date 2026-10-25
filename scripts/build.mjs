@@ -20,7 +20,7 @@ if (!/^[A-Za-z0-9](?:[A-Za-z0-9-]{0,37}[A-Za-z0-9])?$/.test(username)) {
 }
 const output = resolve(root, 'dist');
 await mkdir(output, { recursive: true });
-const files = ['index.html', 'about.html', 'style.css', 'interactions.css', 'editorial.css', 'lab.css', 'script.js', 'github-project.js', 'favicon.svg', 'images', 'certificates'];
+const files = ['index.html', 'about.html', 'deployment-lab.html', 'style.css', 'interactions.css', 'editorial.css', 'lab.css', 'script.js', 'github-project.js', 'favicon.svg', 'images', 'certificates'];
 for (const file of files) await cp(resolve(root, file), resolve(output, file), { recursive: true });
 await writeFile(resolve(output, 'site-config.json'), JSON.stringify({ githubUsername: username, repository: 'Personal_CV' }, null, 2) + '\n');
 console.log(`Static build complete: dist/; public GitHub account: ${username}`);

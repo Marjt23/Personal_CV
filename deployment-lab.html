@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#351717">
+  <title>Deployment Lab | Marjorie Casilao</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="interactions.css">
+  <link rel="stylesheet" href="editorial.css">
+  <link rel="stylesheet" href="lab.css">
+  <script src="github-project.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#lab-main">Skip to content</a>
+  <header class="container"><div class="nav-shell"><a class="dock-label" href="index.html">Marjorie.</a><a class="button secondary" href="index.html">Back to portfolio ↗</a></div></header>
+  <main id="lab-main" class="container deployment-lab">
+    <p class="eyebrow">IT415 · Module 3</p>
+    <h1>Deployment <em>lab.</em></h1>
+    <p class="lab-introduction">This separate course demonstration uses a public environment variable and GitHub’s API. The personal CV homepage remains unchanged.</p>
+    <section class="lab-panel" aria-labelledby="api-title">
+      <h2 id="api-title">Live repository data</h2>
+      <p>The build reads <code>PUBLIC_GITHUB_USERNAME</code> and generates a public configuration file. This page uses that configuration to request repository details from GitHub. No API token or private credential is used.</p>
+      <div class="repository-data" data-github-project>
+        <p role="status" aria-live="polite">Loading public repository details…</p>
+        <dl hidden><dt>Repository</dt><dd data-repository-name></dd><dt>Main language</dt><dd data-repository-language></dd><dt>Last push</dt><dd data-repository-updated></dd></dl>
+        <button type="button" hidden>Retry GitHub details</button>
+      </div>
+      <a href="https://github.com/Marjt23/Personal_CV" target="_blank" rel="noopener noreferrer">View source repository ↗</a>
+    </section>
+    <section class="lab-panel" aria-labelledby="workflow-title">
+      <h2 id="workflow-title">Release workflow</h2>
+      <ol><li>Develop and build locally.</li><li>Push a branch to create a Preview deployment.</li><li>Review the Preview before merging into main.</li><li>Verify the resulting Production deployment.</li></ol>
+      <p>For the real failed build, the environment variable was missing in Vercel even though it was configured locally. Adding it to the intended Vercel environments and redeploying resolved the error.</p>
+    </section>
+    <p class="lab-links"><a href="about.html">About page</a> · <a href="index.html">Homepage</a></p>
+  </main>
+</body>
+</html>
