@@ -90,3 +90,7 @@ The first Preview build completed source checks but failed at scripts/build.mjs:
 `evidence/previous-production-ready.png` shows the earlier main deployment marked Ready; it is not evidence of the new lab release. Capture the new production deployment after the merge, deployment history, and the successful build log for the final submission. The Vercel rollback demonstration remains pending and has not been claimed as complete.
 
 Local HTTP verification returned 200 for /, /about.html, /site-config.json, /github-project.js, and the certificate PDF. Three automated tests pass: repository success without credentials, offline failure/retry recovery, and rejection of invalid configuration before an external request.
+
+## Public portfolio cleanup
+
+At the owner’s request, the repository metadata panel and its script include were removed from the public homepage. The source implementation, automated tests, Preview evidence, and environment configuration remain available for the lab record. The homepage no longer makes the external GitHub API call; therefore the current public homepage does not demonstrate that lab requirement.
