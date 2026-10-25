@@ -1,0 +1,8 @@
+/* Small additions for the deployment lab; the portfolio design stays intact. */
+.repository-data { margin-top:22px; border-top:1px solid var(--line); padding-top:16px; }
+.repository-data p { font-size:10px; color:var(--muted); }
+.repository-data dl { display:grid; grid-template-columns:auto 1fr; gap:4px 12px; margin:12px 0; font-size:10px; }
+.repository-data dd { margin:0; overflow-wrap:anywhere; }.repository-data dt { color:var(--muted); }
+.repository-data [hidden] { display:none; }.repository-data button { border:1px solid var(--line); background:transparent; padding:8px 13px; color:var(--primary); font-size:10px; cursor:pointer; border-radius:20px; margin-top:10px; }
+.about-page { padding-block:55px; }.about-page h1 { margin:15px 0 25px; }.about-page-layout { display:grid; grid-template-columns:1fr 1.5fr; gap:45px; align-items:start; }.about-page-layout img { width:100%; max-width:310px; border-radius:150px 150px 4px 4px; }.about-page-copy p { color:var(--muted); margin-bottom:20px; }.about-page-copy h2 { font-size:26px; margin:25px 0 15px; }.about-page-links { display:flex; flex-wrap:wrap; gap:12px; margin-top:25px; }.about-page-links a { text-decoration:underline; text-underline-offset:4px; }
+@media(max-width:767px) { .about-page-layout { grid-template-columns:1fr; }.about-page-layout img { max-width:230px; justify-self:center; } }

@@ -1,0 +1,9 @@
+Source checks passed: pages, unique IDs, local links/assets, alt text, CSS braces.
+file:///C:/Users/Lenovo/OneDrive/%E6%96%87%E6%A1%A3/ChatGPT/Marjorie%20Cv/scripts/build.mjs:19
+  throw new Error('PUBLIC_GITHUB_USERNAME must be a valid GitHub username, not a URL or email address.');
+        ^
+
+Error: PUBLIC_GITHUB_USERNAME must be a valid GitHub username, not a URL or email address.
+    at file:///C:/Users/Lenovo/OneDrive/%E6%96%87%E6%A1%A3/ChatGPT/Marjorie%20Cv/scripts/build.mjs:19:9
+
+Node.js v26.10.0
